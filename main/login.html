@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>login page </title>
+<script>
+  function  validation()
+{
+        var valid=false;
+        var id=document.getElementById("Uname").value;
+        var  pass=document.getElementById("Password").value;
+        var  id_re= new RegExp("^[a-z][0-9a-zA-Z]{6,9}","g");
+        var  pass_re=new RegExp("[0-9A-Za-z]{6,}","g");
+        if(id.match(id_re))
+        {
+                if(pass.match(pass_re))
+                {
+                        alert("All Field values are in correct format");
+                        valid=true;
+                }
+                else
+                {
+                        alert("password is invalid");
+                }
+         }
+         else
+         {
+                alert("login id is invalid");
+         }
+return valid;
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  body {
+    background-repeat: no-repeat;
+    fill: url(https://www.tourmyindia.com/states/image/map.jpg);
+  }
+th, td {
+    padding: 5%;
+    padding-left: 10px;
+padding-right: 10px;
+}
+table {
+background-color :#f6f3f6;
+margin : 50px;
+padding: 2%;
+padding-left: 60px;
+padding-right: 60px;
+}
+.header {
+  background-color :  red ;
+  padding : 15px;
+}
+.header a {
+  color : white;
+  text-decoration :none;
+  padding : 8px;
+  font-weight: bold;
+}
+.header-right {
+  float: right;
+}
+#pic {
+width : 12%;
+height : 20%;
+float : left;
+margin-top : 15px;
+margin-left : 50px;
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+text-align: center;
+margin-right : 100px;
+color : black;
+float : center;
+}
+.top {
+text-align: center;
+margin-right : 100px;
+color : black;
+}
+</style>
+</head>
+<body>
+    <div class="header"><i class="fa-solid fa-plane-departure" style="color: white;"></i>
+        <a href="#default" class="logo" style="font-size:23px">Company</a>
+        <div class="header-right">
+          <a href="home.html" target="_blank" style="font-size:23px">Home</a>
+          <a href="login.html" style="font-size:23px">Login</a>
+          <a href="register.html" target="_blank" style="font-size:23px">Register</a>
+          <a href="about.html" target="_blank" style="font-size:23px">About</a>
+        </div>
+      </div><hr>
+      <img src="photo.jpeg" alt="India tour" id="pic">
+      <h1 style="font-family:italic">TOUR MY INDIA</h1>
+      <h2 class="top">Let us plan you a Perfect India Holiday</h2>
+      
+      <hr>
+ <center>     
+<table>
+<form>
+<tr>
+<th colspan="2" style="color:red;font-size: 25px;"><big>LOG IN</big></td>
+</tr>
+<tr>
+<th><label>User Name:</label></th>
+<td><input type="text" id="Uname"></td>
+</tr>
+<tr>
+<th><label>Password:</label></th>
+<td><input type="password" id="Password"></td>
+</tr>
+
+<tr>
+<td align="center"><input type="submit" value="Submit" onclick="validation()"></td>
+<td align="center"><button><a href="register.html" style="text-decoration:none;color:black">Create new Account</a></button></td>
+</tr>
+<tr>
+    <th colspan="2">---or---</th>
+</tr>
+<tr>
+    <td colspan="2" style="text-align: center;">Continue With</td>
+</tr>
+<tr>
+    <td style="padding-left: 30%;"><big><i class="fa-brands fa-google"></i></big></td>
+    <td style="padding-left: 40%;"><big><i class="fa-brands fa-facebook"></i></big></td>
+</tr>
+</form>
+</table>
+</center>
+<hr>
+</body>
+</html>

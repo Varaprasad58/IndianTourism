@@ -1,0 +1,424 @@
+<html>
+<head>
+<title>Great Indian Tourism</title>
+<link rel="stylesheet" href="Home.css">
+<link rel="icon" type="image/x-icon" href="flag.jfif">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<script src="Home.js"></script>
+<div class="header"><i class="fa-solid fa-plane-departure" style="color: white;"></i>
+  <a href="https://www.tourmyindia.com/profile.html" class="logo" style="font-size:23px">Company</a>
+  <div class="header-right">
+    <a href="home.html" style="font-size:23px">Home</a>
+    <a href="login.html" target="_blank" style="font-size:23px">Login</a>
+    <a href="register.html" target="_blank" style="font-size:23px">Register</a>
+    <a href="indianstates.html" target="_blank" style="font-size:23px">Explore India</a>
+    <a href="https://www.tourmyindia.com/contact_us.html" target="_blank" style="font-size:23px">Contact us</a>
+  </div>
+ <input type="text" id="myInput" placeholder="Search" onkeyup="search()"></div>
+ <ul id="list">
+  <li class="item"><a href="#south" style="text-decoration: none;">Andhra Pradesh</a></li>
+  <li class="item"><a href="#south" style="text-decoration: none;">Kerala</a></li>
+  <li class="item"><a href="#south" style="text-decoration: none;">Karnataka</a></li>
+  <li class="item"><a href="#south" style="text-decoration: none;">Tamilnadu</a></li>
+  <li class="item"><a href="#south" style="text-decoration: none;">Telangana</a></li>
+  <li class="item"><a href="#west" style="text-decoration: none;">Goa</a></li>
+  <li class="item"><a href="#west" style="text-decoration: none;">Maharastra</a></li>
+  <li class="item"><a href="#west" style="text-decoration: none;">Gujarat</a></li>
+  <li class="item"><a href="#west" style="text-decoration: none;">Daman & Diu</a></li>
+  <li class="item"><a href="#west" style="text-decoration: none;">Dadra & Nagar Havelli</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">jammu-kashmir</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Rajastan</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">uttarpradesh</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Chhattisgarh</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Himachal Pradesh</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Punjab</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Uttara Khand</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Haryana</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Delhi</a></li>
+  <li class="item"><a href="#north" style="text-decoration: none;">Madhya Pradesh</a></li>
+  <li class="item"><a href="#east" style="text-decoration: none;">Arunachalpradesh</a></li>
+  <li class="item"><a href="#east" style="text-decoration: none;">Assam</a></li>
+  <li class="item"><a href="#east" style="text-decoration: none;">Manipur</a></li>
+  <li class="item"><a href="#east" style="text-decoration: none;">Mizoram</a></li>
+  <li class="item"><a href="#east" style="text-decoration: none;">Meghalaya</a></li>
+  <p id="demo">No Results</p>
+ </ul>
+ 
+<script>
+function search()
+{
+  var input=document.getElementById('myInput').value;
+  input=input.toLowerCase();
+  let y=document.getElementsByClassName('item');
+  var x=document.getElementById('demo');
+  var z=1;
+  for(i=0;i<y.length;i++)
+  {
+    x.style.display="none";
+    if(!y[i].innerHTML.toLowerCase().includes(input))
+    {
+      y[i].style.display="none";
+      z=z+1;
+    }else{
+      y[i].style.display="list-item";
+      document.getElementById('list').style.display="list-item";
+    }
+  }
+  if(z>y.length)
+  {
+    x.style.display="block";
+  }
+  if(!input)
+  {
+    document.getElementById('list').style.display='none';
+  }
+
+}
+</script>
+<hr>
+<img src="photo.jpeg" alt="India tour" id="pic">
+<h1 style="font-family:italic">TOUR MY <span style="color: tomato;">INDIA</span></h1>
+<h2 class="top">Let us plan you a Perfect India Holiday</h2>
+<div class="name">
+A.K.H.Vara Prasad<br>
+Regd No:21B91A0507
+</div>
+<hr>
+<img src="home-banner.jpg" style="margin-left:1px;width:100%">
+<hr>
+<div class="header1">
+  <a href="https://www.tourmyindia.com/#" style="font-size:23px"><b>Destinations</b></a>
+    <a href="https://www.tourmyindia.com/#" style="font-size:23px"><b>Holiday Ideas</b></a>
+    <a href="https://www.tourmyindia.com/#" style="font-size:23px"><b>Packages</b></a>
+    <a href="https://www.tourmyindia.com/#" style="font-size:23px"><b>Places to stay</b></a>
+<a href="https://www.tourmyindia.com/#" style="font-size:23px"><b>Weekend Gateways</b></a>
+<a href="https://www.tourmyindia.com/wedding/" style="font-size:23px"><b>Weddings</b></a>
+<a href="https://www.tourmyindia.com/medical-tourism/home/" style="font-size:23px"><b>Medical Tourism</b></a>
+</div>
+<hr>
+
+<div class="main">
+<h2 style="font-size:35px;margin-left:20px" id="south">Top places to visit in <span style="color:tomato">South-India</span></h2>
+<div class="row">
+  <div class="column">
+
+      <a href="ap.html" target="_blank"><img src="Andhra/AMARAVATHI.jpg" alt="Amaravathi" id="image"></a>
+      <h3>Andhra Pradesh</h3>
+      
+  </div>
+  <div class="column">
+      <a href="karnataka.html" target="_blank"><img src="Karnataka/Bangalore.jpg" alt="Bengaluru" id="image"></a>
+      <h3>Karnataka</h3>
+      
+  </div>
+  <div class="column">
+  <a href="kerala.html" target="_blank"> <img src="Kerala/allepey.jpg" alt="Kerala" id="image"> </a>
+    <h3>Kerala</h3>
+     
+  </div>
+  <div class="column">
+    
+      <a href="tamilnadu.html" target="_blank"><img src="Tamilnadu/madurai-2.jpg" alt="Tamilnadu" id="image"></a>
+      <h3>Tamilnadu</h3>
+      
+  </div>
+ <div class="column">
+  <a href="telangana.html" target="_blank"><img src="Telangana/charminar.jfif" alt="Telangana" id="image"></a>
+      <h3>Telangana</h3>
+      
+  </div>
+</div>
+<hr><hr>
+
+
+
+
+<h2 style="font-size:35px;margin-left:20px" id="west">Top places to visit in <span style="color:tomato">West-India</span></h2>
+
+<div class="row">
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/goa/"><img src="goa.webp" alt="Goa" id="image"></a>
+      <h3>Goa</h3>
+      
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/maharashtra/"><img src="maharastra.jpg" alt="Maharastra" id="image"></a>
+      <h3>Maharastra</h3>
+      
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/gujarat/"><img src="gujrat.webp" alt="Gujarat" id="image"></a>
+      <h3>Gujarat</h3>
+      
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/daman-diu/"><img src="Diu.jpg" alt="Daman and Diu" id="image"></a>
+      <h3>Daman and Diu</h3>
+      
+  </div>
+ <div class="column">
+    
+  <a href="https://www.tourmyindia.com/states/dadra-nagar-haveli/"><img src="dadra.jpg" alt="Dadra and Nagar" id="image"></a>
+      <h3>Dadra and Nagar Havelli</h3>
+      
+  </div>
+ </div>
+<hr><hr>
+
+
+
+
+
+
+<h2 style="font-size:35px;margin-left:20px" id="north">Top places to visit in <span style="color:tomato">North-India</span></h2>
+
+<div class="row">
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/jammu-kashmir/"><img src="jk.jpg" alt="Jammu and Kashmir" id="image"></a>
+      <h3>Jammu and Kashmir</h3>
+      
+  </div>
+<div class="column">
+    
+  <a href="https://www.tourmyindia.com/states/rajasthan/"><img src="raj.jpg" alt="Rajastan" id="image"></a>
+      <h3>Rajastan</h3>
+     
+  </div>
+<div class="column">
+    
+  <a href="https://www.tourmyindia.com/states/uttarpradesh/"><img src="up1.jpg" alt="Uttar Pradesh "id="image"></a>
+      <h3>Uttar Pradesh</h3>
+      
+  </div>
+<div class="column">
+    
+  <a href="https://www.tourmyindia.com/states/chhattisgarh/"><img src="chan.jpg" alt="Chandigarh" id="image"></a>
+      <h3>Chhattisgarh</h3>
+     
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/himachal/"><img src="hp.webp" alt="Himachal Pradesh" id="image"></a>
+      <h3>himachal Pradesh</h3>
+      
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/punjab/"><img src="punjab.webp" alt="Punjab" id="image"></a>
+      <h3>Punjab</h3>
+     
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/uttarakhand/"><img src="uk.jpg" alt="Uttara Khand" id="image"></a>
+      <h3>Uttara Khand</h3>
+      
+  </div>
+ <div class="column">
+    
+  <a href="https://www.tourmyindia.com/states/haryana/"><img src="Har.jpg" alt="Haryana" id="image"></a>
+      <h3>Haryana</h3>
+      
+  </div>
+<div class="column">
+    
+  <a href="https://www.tourmyindia.com/states/delhi/"> <img src="delhi.jfif" alt="Delhi" id="image"></a>
+      <h3>Delhi</h3>
+      
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/madhyapradesh/"><img src="madya.jpeg" alt="Madhya Pradesh" id="image"></a>
+    <h3>Madhya Pradesh</h3>
+    
+</div>
+
+</div><hr><hr>
+
+
+
+
+
+<h2 style="font-size:35px;margin-left:20px" id="east">Top places to visit in <span style="color:tomato">NorthEast-India</span></h2>
+
+<div class="row">
+  <div class="column">
+    
+      <a href="https://www.tourmyindia.com/states/arunachalpradesh/"><img src="arunachal.jfif" alt="Arunachal Pradesh" id="image"></a>
+      <h3>Arunachal Pradesh</h3>
+      
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/assam/"><img src="assam.webp" alt="Assam "id="image"></a>
+      <h3>Assam</h3>
+      
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/manipur/"><img src="mani.avif" alt="Manipur" id="image"></a>
+      <h3>Manipur</h3>
+      
+  </div>
+  <div class="column">
+    
+    <a href="https://www.tourmyindia.com/states/meghalaya/"><img src="megha.jpg" alt="Meghalaya" id="image"></a>
+      <h3>Meghalaya</h3>
+      
+  </div>
+ <div class="column">
+    
+  <a href="https://www.tourmyindia.com/states/mizoram/"><img src="mizoram.jpg" alt="Mizoram" id="image"></a>
+      <h3>Mizoram</h3>
+      
+  </div>
+</div></div><hr><hr>
+<div class="below">
+<img src="him.webp" alt="Himalayas" style="margin-left:1px;width:100%">
+ 
+</div>
+<hr><hr>
+<div style="margin: 0 3% 0 3%;">
+  <h1 style="text-align: center;">Explore the <span style="color:tomato">India</span></h1>
+  <p>The culture of India reflects the beliefs, social structure, and religious inclinations of the people of India. India is a culturally diverse country with every region with its own distinct culture, reflected in the language, clothes, and traditions of the people. People of one state are completely different on cultural grounds from the people of other states; nevertheless, they follow one rule of law.
+  </p>
+  <p>Culture also acts as the window of India to the outside world. By looking at the various cultures of India, one gets to admire its diversity and also gets to know the people’s religious beliefs and glorious past. For Indian people, culture is a way of life, and it is something that is deeply ingrained in their souls. It is a way of life, a rule book which defines their conduct, society, festivals, etc.
+  </p>
+  <p>India is a famous country all over the world for its culture and tradition. It is the land of various cultures and traditions. It is the country of the oldest civilizations in the world. The vital components of the Indian culture are good manners, etiquette, civilized communication, rituals, beliefs, values, etc. Even after the lifestyles of everyone have been modernized, Indian people have not changed their traditions and values. The property of togetherness among people of various cultures and traditions has made India a unique country. People here live peacefully in India by following their own culture and traditions.
+  </p>
+  <center><button><a href="indianstates.html" style="text-decoration:none;font-size:20px;color:tomato">Explore now</a></button></center>
+</div>
+
+
+<hr><hr>
+<div style>
+<div style="margin-left:10px"><h2 style="font-size:35px;margin-left:20px;color:tomato">Themes to explore</h2></div><br>
+<div class="logos">
+<span class="theme">
+  <figure>
+<img src="heritage-tour.svg" id="pic1">
+<figcaption>HERITAGE</figcaption>
+</figure>
+</span>
+<span class="theme"><figure>
+<img src="pilgrimage-tour-01.svg" id="pic1">
+<figcaption>PILIGRIMAGE</figcaption>
+</figure></span>
+<span class="theme"><figure>
+<img src="hill-station-tour.svg" id="pic1">
+<figcaption>HILL STATION</figcaption>
+</figure></span>
+<span class="theme"><figure>
+<img src="adventure-tour.svg" id="pic1">
+<figcaption>ADVENTURE</figcaption>
+</figure></span>
+<span class="theme"><figure>
+<img src="beach-tour.svg" id="pic1">
+<figcaption>BEACH</figcaption>
+</figure></span>
+</div></div>
+<hr><hr>
+<div class="para">
+  <h2 style="color:black;font-size:35px;margin-left:20px;color:tomato">Why Choose Us?</h2>
+               
+  <p style="color:black">More than 20 Years of Experience, Variety of Tour Packages, Best Deals and Personalised Services.</p></div>
+  <div class="parent">
+     <span class="child">
+        <div class="best-icon">
+           <img src="https://www.tourmyindia.com/imgnew/experience.svg" alt="images" id="icon">
+        </div>
+        <div class="best-details">
+           <h4>Experience</h4>
+           <p>Our dedicated travel team diligently works round-the-clock to design the best travel experiences for the customers. The skilled team spends considerable amounts of time ideating tour packages that guarantee to make travelling with us an experience like no other. We select the finest hotels in every category, boast an excellent personal fleet of vehicles for transportation.</p>
+        </div>
+     </span>
+     <span class="child">
+        <div class="best-icon">
+           <img src="https://www.tourmyindia.com/imgnew/positive-customer-feedback.svg" alt="customer-feedback-tour" id="icon">
+        </div>
+        <div class="best-details">
+           <h4>Positive Customer Feedback</h4>
+           <p>We're truly humbled to have received volumes of positive customer feedback for our services. This appreciation from our prestigious clients is more valuable than any award for us. As a customer-driven travel company, our priority has always been their satisfaction. Therefore, our dedicated team of experts endeavours to achieve the goal of making our customers happy.</p>
+        </div>
+     </span>
+     <span class="child">
+        <div class="best-icon">
+           <img src="https://www.tourmyindia.com/imgnew/recognition-tour-01.svg" alt="recognition-tour-01" id="icon">
+        </div>
+        <div class="best-details">
+           <h4>Recognition</h4>
+           <p>We are proud to be accredited by major tour and travel associations in India and world like IATA, IATO, TAAI, IMF, MOT (Ministry of Tourism, Govt of India), and TOFT. It is an honour for us to be able to be a part of crucial initiatives towards safeguarding animal rights, protection of endangered species, and responsible mountaineering and trekking ventures.</p></div>
+        </span>
+     </div>
+                   
+          
+
+
+<hr><hr><br>
+<div class="footer">
+<div class="container1">
+<div class="inside">
+
+               <ul type="none">
+                  <li><h2 style="color:tomato">In The Main Section</h2></li>
+                  <li><a href="https://extranet.tourmyindia.com/auth/signup" target="_blank" class="hotel-book">Register Your Hotel<sup>New</sup></a></li>
+                  <li><a href="https://www.tourmyindia.com/packagetours.html">Package Tours</a></li>
+                  <li><a href="https://www.tourmyindia.com/fd/fixed-departure-tour.html">Fixed Departure Tours</a></li>
+                  <li><a href="https://www.tourmyindia.com/attraction/">Top Tourist Attractions of India</a></li>
+                  <li><a href="https://www.tourmyindia.com/states/">States of India</a></li>
+                  <li><a href="https://www.tourmyindia.com/hotelchains/">Best Hotel Chains in India</a></li>
+                  <li><a href="https://www.tourmyindia.com/destination_india/">Top Travel Destinations</a></li>
+                  <li><a href="https://www.tourmyindia.com/corporate/">Corporate Tour</a></li>
+                  <li><a href="https://www.tourmyindia.com/bookhotel.html">Book A Hotel</a></li>
+                  <li><a href="https://www.tourmyindia.com/rentacar.html">Rent A Car</a></li>
+                  <li><a href="https://www.tourmyindia.com/airtickets.html">Air Tickets</a></li>
+                  <li><a href="https://www.tourmyindia.com/profile.html">Company Profile</a></li>
+                  <li><a href="https://www.tourmyindia.com/testimonials.html">Testimonials</a></li>
+                  <li><a href="https://www.tourmyindia.com/contact_us.html">Contact Us</a></li>
+                  <li><a href="https://www.tourmyindia.com/blog/">Blog</a></li>
+                  <li><a href="https://www.tourmyindia.com/kumbhmela/" target="_blank">Kumbh Mela-2021</a></li>
+               </ul>
+</div>
+<div class="inside">
+ 
+               <ul type="none">
+                  <li><h2 style="color:tomato">Legal Policy</h2></li>
+                  <li><a href="https://www.tourmyindia.com/terms_conditions.html">Terms &amp; Conditions</a></li>
+                  <li><a href="https://www.tourmyindia.com/disclaimer.html">Disclaimer</a></li>
+                  <li><a href="https://www.tourmyindia.com/privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="https://www.tourmyindia.com/career.html">We are Hiring</a></li>
+                  <li><a href="https://www.tourmyindia.com/write-for-us.html">Share Your Travel Experience</a></li>
+               </ul>
+</div>
+<div class="inside">
+
+                  <ul type="none">
+                     <li><h2 style="color:tomato">Social Media</h2></li>
+                     <li><a href="https://www.linkedin.com/company/tour-my-india--india-tours-&amp;-travel-agency" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                     <li><a href="https://twitter.com/tourmyindiaa" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li><a href="https://www.facebook.com/tourmyindia" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                     <li><a href="https://www.instagram.com/tourmyindia/" target="_blank"><i class="fa-brands fa-instagram"></i>                     </a></li>
+                     <li><a href="https://www.pinterest.com/tourmyindia/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                     <li><a href="https://www.youtube.com/tourmyindia" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                  </ul>
+</div>
+</div><hr>
+<p style="text-align:center;color: white;">India has a myriad of landscapes, great heritage and culture, varied flora and fauna. The country is the most preferred tourist destinations for tourists from all across the world for its picturesque landscapes, spectacular waterfalls, habitat of the country's largest tiger reserve and home to the warmest people on earth.</p>
+<hr><div class="below">
+<a href="#abc">Terms of Use</a>
+<a href="#abc">Privacy Policy</a>
+<a href="#abc">Important Links</a>
+<a href="#abc">Emergency</a></div>
+<hr>
+</div>
+</body>
+</html>
